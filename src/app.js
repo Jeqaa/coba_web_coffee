@@ -89,19 +89,13 @@ form.addEventListener('keyup', function () {
 });
 
 //kirim data ketika tombol checkout diklik
-<<<<<<< HEAD
-checkoutButton.addEventListener('click', function (e) {
-=======
 checkoutButton.addEventListener('click', async function (e) {
->>>>>>> f8e08830b0fe7962f183ac3acd8a825f64059ab9
   e.preventDefault();
   const formData = new FormData(form);
   const data = new URLSearchParams(formData);
   const objData = Object.fromEntries(data);
-<<<<<<< HEAD
   const message = formatMessage(objData);
   window.open('http://wa.me/6282138494241?text=' + encodeURIComponent(message));
-=======
   // const message = formatMessage(objData);
   // window.open('http://wa.me/6282138494241?text=' + encodeURIComponent(message));
 
@@ -118,7 +112,6 @@ checkoutButton.addEventListener('click', async function (e) {
   } catch (err) {
     console.log(err);
   }
->>>>>>> f8e08830b0fe7962f183ac3acd8a825f64059ab9
 });
 
 //format persan whatsapp
